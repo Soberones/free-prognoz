@@ -38,14 +38,17 @@ export default function Post({ post, posts, preview }) {
                 />
                 <meta name="Description" content={post.seo.metaDesc} />
               </Head>
-              <PostHeader
-                title={post.title}
-                coverImage={post.featuredImage?.node}
-                date={post.date}
-                author={post.author?.node}
-                categories={post.categories}
-              />
-              <PostBody content={post.content} />
+              <div>
+                <PostHeader
+                  title={post.title}
+                  coverImage={post.featuredImage?.node}
+                  date={post.date}
+                  author={post.author?.node}
+                  categories={post.categories}
+                />
+                <PostBody content={post.content} />
+              </div>
+
               <footer>
                 {post.tags.edges.length > 0 && <Tags tags={post.tags} />}
               </footer>

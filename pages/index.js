@@ -15,7 +15,11 @@ export default function Index({ allPosts: { edges }, preview }) {
     <>
       <Layout preview={preview}>
         <Head>
-          <title>Next.js Blog Example with {CMS_NAME}</title>
+          <title>Бесплатные прогнозы на спорт</title>
+          <meta
+            name="Description"
+            content="Действительно бесплатные прогнозы на спорт"
+          />
         </Head>
         <Container>
           <Intro />

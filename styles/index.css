@@ -111,3 +111,28 @@
   filter: hue-rotate(100deg);
   filter: blur(2px);
 }
+
+.hero-card {
+  display: flex;
+  flex-direction: column-reverse;
+  box-shadow: 0px 0px 96px -41px rgba(0, 0, 0, 0.75);
+  padding: 20px;
+  border-radius: 20px;
+  height: 300px;
+}
+
+.hero-card-title {
+  height: 100px;
+  display: grid;
+  place-items: center;
+  position: relative;
+  background-color: #fefefe;
+  border-radius: 10px;
+  box-shadow: 0px 0px 67px -12px rgba(0, 0, 0, 0.75);
+  padding: 10px;
+}
+
+.banerWrapper {
+  height: 300px;
+  box-shadow: 0px 0px 67px -12px rgba(0, 0, 0, 0.75);
+}

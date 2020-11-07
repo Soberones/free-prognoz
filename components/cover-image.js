@@ -3,12 +3,7 @@ import Link from "next/link";
 
 export default function CoverImage({ title, coverImage, slug }) {
   const image = (
-    <img
-      src={coverImage?.sourceUrl}
-      className={cn("shadow-small filter", {
-        "hover:shadow-medium transition-shadow duration-200": slug,
-      })}
-    />
+    <img src={coverImage?.sourceUrl} alt={title} className="hero-post-cover" />
   );
   return (
     <div className="sm:mx-0">
